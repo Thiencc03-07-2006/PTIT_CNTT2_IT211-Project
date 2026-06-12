@@ -1,11 +1,11 @@
 package com.project_cuoimon.service;
 
-import com.project_cuoimon.dto.AccountResponse;
-import com.project_cuoimon.dto.TransferRequest;
-import com.project_cuoimon.dto.TransactionResponseDto;
-import com.project_cuoimon.dto.ChangePinRequest;
-import com.project_cuoimon.entity.Transaction;
-import com.project_cuoimon.entity.User;
+import com.project_cuoimon.model.dto.response.AccountResponse;
+import com.project_cuoimon.model.dto.request.TransferRequest;
+import com.project_cuoimon.model.dto.response.TransactionResponseDto;
+import com.project_cuoimon.model.dto.request.ChangePinRequest;
+import com.project_cuoimon.model.entity.Transaction;
+import com.project_cuoimon.model.entity.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

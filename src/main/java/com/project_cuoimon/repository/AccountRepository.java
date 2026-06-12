@@ -1,7 +1,7 @@
 package com.project_cuoimon.repository;
 
-import com.project_cuoimon.entity.Account;
-import com.project_cuoimon.entity.User;
+import com.project_cuoimon.model.entity.Account;
+import com.project_cuoimon.model.entity.User;
 import jakarta.persistence.LockModeType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Lock;

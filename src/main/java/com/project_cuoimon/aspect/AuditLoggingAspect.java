@@ -1,6 +1,6 @@
 package com.project_cuoimon.aspect;
 
-import com.project_cuoimon.entity.Transaction;
+import com.project_cuoimon.model.entity.Transaction;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.AfterThrowing;
@@ -17,7 +17,7 @@ public class AuditLoggingAspect {
 
     // 1. AOP tự động chạy SAU KHI phương thức chuyển tiền (transfer) thành công và trả về kết quả
     @AfterReturning(
-            pointcut = "execution(* com.project_cuoimon.service.AccountServiceImpl.transfer(..))",
+            pointcut = "execution(* com.project_cuoimon.service.impl.AccountServiceImpl.transfer(..))",
             returning = "result"
     )
     public void logTransferSuccess(JoinPoint joinPoint, Object result) {
@@ -34,7 +34,7 @@ public class AuditLoggingAspect {
 
     // 2. AOP tự động chạy SAU KHI phương thức chuyển tiền (transfer) xảy ra lỗi và ném ra Exception
     @AfterThrowing(
-            pointcut = "execution(* com.project_cuoimon.service.AccountServiceImpl.transfer(..))",
+            pointcut = "execution(* com.project_cuoimon.service.impl.AccountServiceImpl.transfer(..))",
             throwing = "ex"
     )
     public void logTransferFailure(JoinPoint joinPoint, Throwable ex) {

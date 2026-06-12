@@ -1,8 +1,8 @@
 package com.project_cuoimon.config;
 
-import com.project_cuoimon.security.AuthEntryPointJwt;
-import com.project_cuoimon.security.AuthTokenFilter;
-import com.project_cuoimon.security.UserDetailsServiceImpl;
+import com.project_cuoimon.security.jwt.AuthEntryPointJwt;
+import com.project_cuoimon.security.jwt.AuthTokenFilter;
+import com.project_cuoimon.security.principal.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

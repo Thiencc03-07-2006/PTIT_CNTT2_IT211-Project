@@ -1,6 +1,6 @@
 package com.project_cuoimon.repository;
 
-import com.project_cuoimon.entity.Role;
+import com.project_cuoimon.model.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,10 +1,11 @@
 package com.project_cuoimon.service;
 
-import com.project_cuoimon.entity.KycProfile;
-import com.project_cuoimon.entity.Status;
-import com.project_cuoimon.entity.User;
-import com.project_cuoimon.dto.RegisterRequest;
-import com.project_cuoimon.dto.UserResponseDto;
+import com.project_cuoimon.model.dto.request.ForgotPasswordRequest;
+import com.project_cuoimon.model.entity.KycProfile;
+import com.project_cuoimon.model.entity.Status;
+import com.project_cuoimon.model.entity.User;
+import com.project_cuoimon.model.dto.request.RegisterRequest;
+import com.project_cuoimon.model.dto.response.UserResponseDto;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.multipart.MultipartFile;
@@ -31,5 +32,5 @@ public interface UserService {
     void deleteUser(Long userId);
 
     // Quên mật khẩu (FR-10)
-    String forgotPassword(com.project_cuoimon.dto.ForgotPasswordRequest request);
+    String forgotPassword(ForgotPasswordRequest request);
 }

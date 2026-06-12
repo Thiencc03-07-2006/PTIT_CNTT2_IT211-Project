@@ -1,7 +1,7 @@
 package com.project_cuoimon.repository;
 
-import com.project_cuoimon.entity.KycProfile;
-import com.project_cuoimon.entity.User;
+import com.project_cuoimon.model.entity.KycProfile;
+import com.project_cuoimon.model.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

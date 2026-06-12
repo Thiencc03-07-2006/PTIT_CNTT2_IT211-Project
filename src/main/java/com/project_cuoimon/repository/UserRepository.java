@@ -1,7 +1,7 @@
 package com.project_cuoimon.repository;
 
-import com.project_cuoimon.entity.User;
-import com.project_cuoimon.dto.UserResponseDto;
+import com.project_cuoimon.model.entity.User;
+import com.project_cuoimon.model.dto.response.UserResponseDto;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -17,7 +17,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
     boolean existsByEmail(String email);
 
     // Kỹ thuật JPQL Constructor Projection tối ưu hóa RAM (Yêu cầu UC-02)
-    @Query("SELECT new com.project_cuoimon.dto.UserResponseDto(u.id, u.username, u.email, u.phoneNumber, u.isActive, u.isKyc, u.role.name, u.createdAt) FROM User u")
+    @Query("SELECT new com.project_cuoimon.model.dto.response.UserResponseDto(u.id, u.username, u.email, u.phoneNumber, u.isActive, u.isKyc, u.role.name, u.createdAt) FROM User u")
     Page<UserResponseDto> findAllUsersProjected(Pageable pageable);
     //Từ khóa new kết hợp đường dẫn DTO: Báo cho MySQL biết:
     // "Tôi chỉ muốn lấy đúng 8 cột dữ liệu này thôi, hãy nạp nó trực tiếp vào Constructor của lớp UserResponseDto và trả về luôn".

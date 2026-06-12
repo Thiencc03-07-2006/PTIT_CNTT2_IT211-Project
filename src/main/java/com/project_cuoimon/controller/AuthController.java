@@ -1,13 +1,19 @@
 package com.project_cuoimon.controller;
 
-import com.project_cuoimon.dto.*;
-import com.project_cuoimon.entity.RefreshToken;
-import com.project_cuoimon.entity.TokenBlackList;
-import com.project_cuoimon.entity.User;
+import com.project_cuoimon.model.dto.request.ForgotPasswordRequest;
+import com.project_cuoimon.model.dto.request.LoginRequest;
+import com.project_cuoimon.model.dto.request.RegisterRequest;
+import com.project_cuoimon.model.dto.request.TokenRefreshRequest;
+import com.project_cuoimon.model.dto.response.ApiResponse;
+import com.project_cuoimon.model.dto.response.JwtResponse;
+import com.project_cuoimon.model.dto.response.TokenRefreshResponse;
+import com.project_cuoimon.model.entity.RefreshToken;
+import com.project_cuoimon.model.entity.TokenBlackList;
+import com.project_cuoimon.model.entity.User;
 import com.project_cuoimon.repository.RefreshTokenRepository;
 import com.project_cuoimon.repository.TokenBlackListRepository;
-import com.project_cuoimon.security.JwtUtils;
-import com.project_cuoimon.security.UserDetailsImpl;
+import com.project_cuoimon.security.jwt.JwtUtils;
+import com.project_cuoimon.security.principal.UserDetailsImpl;
 import com.project_cuoimon.service.UserService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;

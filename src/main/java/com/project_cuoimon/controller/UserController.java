@@ -1,12 +1,12 @@
 package com.project_cuoimon.controller;
 
-import com.project_cuoimon.dto.ApiResponse;
-import com.project_cuoimon.dto.UserResponseDto;
-import com.project_cuoimon.entity.KycProfile;
-import com.project_cuoimon.entity.Status;
-import com.project_cuoimon.entity.User;
+import com.project_cuoimon.model.dto.response.ApiResponse;
+import com.project_cuoimon.model.dto.response.UserResponseDto;
+import com.project_cuoimon.model.entity.KycProfile;
+import com.project_cuoimon.model.entity.Status;
+import com.project_cuoimon.model.entity.User;
 import com.project_cuoimon.repository.UserRepository;
-import com.project_cuoimon.security.UserDetailsImpl;
+import com.project_cuoimon.security.principal.UserDetailsImpl;
 import com.project_cuoimon.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

@@ -1,7 +1,7 @@
 package com.project_cuoimon.repository;
 
-import com.project_cuoimon.entity.Account;
-import com.project_cuoimon.entity.Transaction;
+import com.project_cuoimon.model.entity.Account;
+import com.project_cuoimon.model.entity.Transaction;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

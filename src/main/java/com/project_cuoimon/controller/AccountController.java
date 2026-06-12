@@ -1,10 +1,14 @@
 package com.project_cuoimon.controller;
 
-import com.project_cuoimon.dto.*;
-import com.project_cuoimon.entity.Transaction;
-import com.project_cuoimon.entity.User;
+import com.project_cuoimon.model.dto.request.ChangePinRequest;
+import com.project_cuoimon.model.dto.request.TransferRequest;
+import com.project_cuoimon.model.dto.response.AccountResponse;
+import com.project_cuoimon.model.dto.response.ApiResponse;
+import com.project_cuoimon.model.dto.response.TransactionResponseDto;
+import com.project_cuoimon.model.entity.Transaction;
+import com.project_cuoimon.model.entity.User;
 import com.project_cuoimon.repository.UserRepository;
-import com.project_cuoimon.security.UserDetailsImpl;
+import com.project_cuoimon.security.principal.UserDetailsImpl;
 import com.project_cuoimon.service.AccountService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
 package com.project_cuoimon.exception;
 
-import com.project_cuoimon.dto.ApiResponse;
+import com.project_cuoimon.model.dto.response.ApiResponse;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

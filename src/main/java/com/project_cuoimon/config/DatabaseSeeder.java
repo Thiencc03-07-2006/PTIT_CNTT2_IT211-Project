@@ -1,6 +1,6 @@
 package com.project_cuoimon.config;
 
-import com.project_cuoimon.entity.Role;
+import com.project_cuoimon.model.entity.Role;
 import com.project_cuoimon.repository.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
